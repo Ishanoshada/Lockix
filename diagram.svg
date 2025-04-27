@@ -1,0 +1,231 @@
+<svg width="1209pt" height="589pt" viewBox="0.00 0.00 1209.29 589.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 585)">
+<title>SecureFileEncryptionApp</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-585 1205.29,-585 1205.29,4 -4,4"></polygon>
+<g id="clust1" class="cluster">
+<title>cluster_UI</title>
+<polygon fill="#d3e6f3" stroke="black" points="495.33,-99 495.33,-223 1014.23,-223 1014.23,-99 495.33,-99"></polygon>
+<text text-anchor="middle" x="754.78" y="-206.4" font-family="Times,serif" font-size="14.00">User Interface (CLI)</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_EncryptionCore</title>
+<polygon fill="#f3e6d1" stroke="black" points="8,-322 8,-573 452.92,-573 452.92,-322 8,-322"></polygon>
+<text text-anchor="middle" x="230.46" y="-556.4" font-family="Times,serif" font-size="14.00">Encryption Core</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_ConfigManagement</title>
+<polygon fill="#f3d3d1" stroke="black" points="830.1,-8 830.1,-91 1193.29,-91 1193.29,-8 830.1,-8"></polygon>
+<text text-anchor="middle" x="1011.7" y="-74.4" font-family="Times,serif" font-size="14.00">Configuration Management</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_FileSystem</title>
+<polygon fill="#d3f3d1" stroke="black" points="286.72,-231 286.72,-314 620.34,-314 620.34,-231 286.72,-231"></polygon>
+<text text-anchor="middle" x="453.53" y="-297.4" font-family="Times,serif" font-size="14.00">File System Operations</text>
+</g>
+<!-- CLI -->
+<g id="node1" class="node">
+<title>CLI</title>
+<polygon fill="#a4c8e1" stroke="black" points="590.93,-172 503.33,-172 503.33,-136 590.93,-136 590.93,-172"></polygon>
+<text text-anchor="middle" x="547.13" y="-149.8" font-family="Helvetica,sans-Serif" font-size="14.00">CLI Module</text>
+</g>
+<!-- UserInput -->
+<g id="node2" class="node">
+<title>UserInput</title>
+<polygon fill="#b0d0f0" stroke="black" points="1006.23,-190.6 823.3,-190.6 776.24,-107.4 959.17,-107.4 1006.23,-190.6"></polygon>
+<text text-anchor="middle" x="891.24" y="-153.2" font-family="Helvetica,sans-Serif" font-size="14.00">User Input</text>
+<text text-anchor="middle" x="891.24" y="-136.4" font-family="Helvetica,sans-Serif" font-size="14.00">(file, password)</text>
+</g>
+<!-- CLI&#45;&gt;UserInput -->
+<g id="edge1" class="edge">
+<title>CLI-&gt;UserInput</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M591.41,-160C591.41,-160 794.04,-160 794.04,-160"></path>
+<polygon fill="black" stroke="black" points="794.04,-163.5 804.04,-160 794.04,-156.5 794.04,-163.5"></polygon>
+<text text-anchor="middle" x="694.29" y="-152.2" font-family="Times,serif" font-size="14.00">accepts</text>
+</g>
+<!-- Encryptor -->
+<g id="node3" class="node">
+<title>Encryptor</title>
+<polygon fill="#f9d68a" stroke="black" points="91.91,-367 16,-367 16,-331 91.91,-331 91.91,-367"></polygon>
+<text text-anchor="middle" x="53.96" y="-344.8" font-family="Helvetica,sans-Serif" font-size="14.00">Encryptor</text>
+</g>
+<!-- CLI&#45;&gt;Encryptor -->
+<g id="edge2" class="edge">
+<title>CLI-&gt;Encryptor</title>
+<path fill="none" stroke="black" d="M503.14,-150.4C378.37,-150.4 31.18,-150.4 31.18,-150.4 31.18,-150.4 31.18,-319.16 31.18,-319.16"></path>
+<polygon fill="black" stroke="black" points="27.68,-319.16 31.18,-329.16 34.68,-319.16 27.68,-319.16"></polygon>
+<text text-anchor="middle" x="339.28" y="-210.2" font-family="Times,serif" font-size="14.00">request encryption</text>
+</g>
+<!-- CLI&#45;&gt;Encryptor -->
+<g id="edge13" class="edge">
+<title>CLI-&gt;Encryptor</title>
+<path fill="none" stroke="black" d="M503.13,-157.6C380.93,-157.6 46.36,-157.6 46.36,-157.6 46.36,-157.6 46.36,-319.13 46.36,-319.13"></path>
+<polygon fill="black" stroke="black" points="42.86,-319.13 46.36,-329.13 49.86,-319.13 42.86,-319.13"></polygon>
+</g>
+<!-- Config -->
+<g id="node8" class="node">
+<title>Config</title>
+<polygon fill="#f99d8d" stroke="black" points="944.38,-58 838.1,-58 838.1,-22 944.38,-22 944.38,-58"></polygon>
+<text text-anchor="middle" x="891.24" y="-35.8" font-family="Helvetica,sans-Serif" font-size="14.00">Config Module</text>
+</g>
+<!-- CLI&#45;&gt;Config -->
+<g id="edge8" class="edge">
+<title>CLI-&gt;Config</title>
+<path fill="none" stroke="black" d="M547.13,-135.63C547.13,-103.66 547.13,-41.2 547.13,-41.2 547.13,-41.2 826.33,-41.2 826.33,-41.2"></path>
+<polygon fill="black" stroke="black" points="826.33,-44.7 836.33,-41.2 826.33,-37.7 826.33,-44.7"></polygon>
+<text text-anchor="middle" x="694.29" y="-111.2" font-family="Times,serif" font-size="14.00">password management</text>
+</g>
+<!-- CLI&#45;&gt;Config -->
+<g id="edge17" class="edge">
+<title>CLI-&gt;Config</title>
+<path fill="none" stroke="black" d="M569.03,-135.81C569.03,-105.9 569.03,-49.6 569.03,-49.6 569.03,-49.6 826.16,-49.6 826.16,-49.6"></path>
+<polygon fill="black" stroke="black" points="826.16,-53.1 836.16,-49.6 826.16,-46.1 826.16,-53.1"></polygon>
+</g>
+<!-- UserInput&#45;&gt;CLI -->
+<g id="edge12" class="edge">
+<title>UserInput-&gt;CLI</title>
+<path fill="none" stroke="black" d="M799.02,-148C799.02,-148 602.83,-148 602.83,-148"></path>
+<polygon fill="black" stroke="black" points="602.83,-144.5 592.83,-148 602.83,-151.5 602.83,-144.5"></polygon>
+</g>
+<!-- KeyDerivation -->
+<g id="node4" class="node">
+<title>KeyDerivation</title>
+<polygon fill="#fbe8a6" stroke="black" points="418.31,-371.8 254.25,-371.8 254.25,-330.2 424.31,-330.2 424.31,-365.8 418.31,-371.8"></polygon>
+<polyline fill="none" stroke="black" points="418.31,-371.8 418.31,-365.8"></polyline>
+<polyline fill="none" stroke="black" points="424.31,-365.8 418.31,-365.8"></polyline>
+<text text-anchor="middle" x="339.28" y="-355.2" font-family="Helvetica,sans-Serif" font-size="14.00">PBKDF2 Key Derivation</text>
+<text text-anchor="middle" x="339.28" y="-338.4" font-family="Helvetica,sans-Serif" font-size="14.00">(SHA-256, 1M iterations)</text>
+</g>
+<!-- Encryptor&#45;&gt;KeyDerivation -->
+<g id="edge3" class="edge">
+<title>Encryptor-&gt;KeyDerivation</title>
+<path fill="none" stroke="black" d="M92.14,-343C92.14,-343 242.4,-343 242.4,-343"></path>
+<polygon fill="black" stroke="black" points="242.4,-346.5 252.4,-343 242.4,-339.5 242.4,-346.5"></polygon>
+</g>
+<!-- AES_Encrypt -->
+<g id="node5" class="node">
+<title>AES_Encrypt</title>
+<polygon fill="#fbe8a6" stroke="black" points="435.44,-431.8 237.12,-431.8 237.12,-390.2 441.44,-390.2 441.44,-425.8 435.44,-431.8"></polygon>
+<polyline fill="none" stroke="black" points="435.44,-431.8 435.44,-425.8"></polyline>
+<polyline fill="none" stroke="black" points="441.44,-425.8 435.44,-425.8"></polyline>
+<text text-anchor="middle" x="339.28" y="-415.2" font-family="Helvetica,sans-Serif" font-size="14.00">AES-256-CBC Encryption</text>
+<text text-anchor="middle" x="339.28" y="-398.4" font-family="Helvetica,sans-Serif" font-size="14.00">(Random IV, PKCS7 Padding)</text>
+</g>
+<!-- Encryptor&#45;&gt;AES_Encrypt -->
+<g id="edge4" class="edge">
+<title>Encryptor-&gt;AES_Encrypt</title>
+<path fill="none" stroke="black" d="M92.29,-355C148.25,-355 245.69,-355 245.69,-355 245.69,-355 245.69,-378.32 245.69,-378.32"></path>
+<polygon fill="black" stroke="black" points="242.19,-378.32 245.69,-388.32 249.19,-378.32 242.19,-378.32"></polygon>
+</g>
+<!-- HMAC -->
+<g id="node6" class="node">
+<title>HMAC</title>
+<polygon fill="#fbe8a6" stroke="black" points="438.92,-486 233.63,-486 233.63,-450 444.92,-450 444.92,-480 438.92,-486"></polygon>
+<polyline fill="none" stroke="black" points="438.92,-486 438.92,-480"></polyline>
+<polyline fill="none" stroke="black" points="444.92,-480 438.92,-480"></polyline>
+<text text-anchor="middle" x="339.28" y="-463.8" font-family="Helvetica,sans-Serif" font-size="14.00">HMAC-SHA256 Integrity Check</text>
+</g>
+<!-- Encryptor&#45;&gt;HMAC -->
+<g id="edge5" class="edge">
+<title>Encryptor-&gt;HMAC</title>
+<path fill="none" stroke="black" d="M66.61,-367.33C66.61,-400.71 66.61,-468 66.61,-468 66.61,-468 221.95,-468 221.95,-468"></path>
+<polygon fill="black" stroke="black" points="221.95,-471.5 231.95,-468 221.95,-464.5 221.95,-471.5"></polygon>
+</g>
+<!-- Watermark -->
+<g id="node7" class="node">
+<title>Watermark</title>
+<polygon fill="#fbe8a6" stroke="black" points="403.52,-540 269.04,-540 269.04,-504 409.52,-504 409.52,-534 403.52,-540"></polygon>
+<polyline fill="none" stroke="black" points="403.52,-540 403.52,-534"></polyline>
+<polyline fill="none" stroke="black" points="409.52,-534 403.52,-534"></polyline>
+<text text-anchor="middle" x="339.28" y="-517.8" font-family="Helvetica,sans-Serif" font-size="14.00">Watermark Injection</text>
+</g>
+<!-- Encryptor&#45;&gt;Watermark -->
+<g id="edge6" class="edge">
+<title>Encryptor-&gt;Watermark</title>
+<path fill="none" stroke="black" d="M41.3,-367.19C41.3,-411.6 41.3,-522 41.3,-522 41.3,-522 257.15,-522 257.15,-522"></path>
+<polygon fill="black" stroke="black" points="257.15,-525.5 267.15,-522 257.15,-518.5 257.15,-525.5"></polygon>
+</g>
+<!-- FileSystem -->
+<g id="node10" class="node">
+<title>FileSystem</title>
+<polygon fill="#a4d8a1" stroke="black" points="383.84,-280 294.72,-280 294.72,-244 383.84,-244 383.84,-280"></polygon>
+<text text-anchor="middle" x="339.28" y="-257.8" font-family="Helvetica,sans-Serif" font-size="14.00">File System</text>
+</g>
+<!-- Encryptor&#45;&gt;FileSystem -->
+<g id="edge9" class="edge">
+<title>Encryptor-&gt;FileSystem</title>
+<path fill="none" stroke="black" d="M76.73,-330.62C76.73,-306.72 76.73,-268 76.73,-268 76.73,-268 282.93,-268 282.93,-268"></path>
+<polygon fill="black" stroke="black" points="282.93,-271.5 292.93,-268 282.93,-264.5 282.93,-271.5"></polygon>
+<text text-anchor="middle" x="162.77" y="-323.2" font-family="Times,serif" font-size="14.00">save encrypted file</text>
+</g>
+<!-- Encryptor&#45;&gt;FileSystem -->
+<g id="edge14" class="edge">
+<title>Encryptor-&gt;FileSystem</title>
+<path fill="none" stroke="black" d="M61.55,-330.63C61.55,-303.52 61.55,-256 61.55,-256 61.55,-256 282.83,-256 282.83,-256"></path>
+<polygon fill="black" stroke="black" points="282.83,-259.5 292.83,-256 282.83,-252.5 282.83,-259.5"></polygon>
+</g>
+<!-- Config&#45;&gt;CLI -->
+<g id="edge16" class="edge">
+<title>Config-&gt;CLI</title>
+<path fill="none" stroke="black" d="M837.63,-32.8C735.96,-32.8 525.23,-32.8 525.23,-32.8 525.23,-32.8 525.23,-124.08 525.23,-124.08"></path>
+<polygon fill="black" stroke="black" points="521.73,-124.08 525.23,-134.08 528.73,-124.08 521.73,-124.08"></polygon>
+</g>
+<!-- PasswordStore -->
+<g id="node9" class="node">
+<title>PasswordStore</title>
+<polygon fill="#f9b3a1" stroke="black" points="1185.29,-57.8 1182.29,-61.8 1161.29,-61.8 1158.29,-57.8 1043.23,-57.8 1043.23,-16.2 1185.29,-16.2 1185.29,-57.8"></polygon>
+<text text-anchor="middle" x="1114.26" y="-41.2" font-family="Helvetica,sans-Serif" font-size="14.00">Password Store</text>
+<text text-anchor="middle" x="1114.26" y="-24.4" font-family="Helvetica,sans-Serif" font-size="14.00">(hashed passwords)</text>
+</g>
+<!-- Config&#45;&gt;PasswordStore -->
+<g id="edge7" class="edge">
+<title>Config-&gt;PasswordStore</title>
+<path fill="none" stroke="black" d="M944.66,-39.9C944.66,-39.9 1031.63,-39.9 1031.63,-39.9"></path>
+<polygon fill="black" stroke="black" points="1031.63,-43.4 1041.63,-39.9 1031.63,-36.4 1031.63,-43.4"></polygon>
+</g>
+<!-- FileSystem&#45;&gt;CLI -->
+<g id="edge15" class="edge">
+<title>FileSystem-&gt;CLI</title>
+<path fill="none" stroke="black" d="M339.28,-243.72C339.28,-215.56 339.28,-164.8 339.28,-164.8 339.28,-164.8 491.54,-164.8 491.54,-164.8"></path>
+<polygon fill="black" stroke="black" points="491.54,-168.3 501.54,-164.8 491.54,-161.3 491.54,-168.3"></polygon>
+</g>
+<!-- EncryptedFile -->
+<g id="node11" class="node">
+<title>EncryptedFile</title>
+<polygon fill="#b7e2b0" stroke="black" points="612.34,-280.8 481.92,-280.8 481.92,-276.8 477.92,-276.8 477.92,-272.8 481.92,-272.8 481.92,-247.2 477.92,-247.2 477.92,-243.2 481.92,-243.2 481.92,-239.2 612.34,-239.2 612.34,-280.8"></polygon>
+<polyline fill="none" stroke="black" points="481.92,-276.8 485.92,-276.8 485.92,-272.8 481.92,-272.8"></polyline>
+<polyline fill="none" stroke="black" points="481.92,-247.2 485.92,-247.2 485.92,-243.2 481.92,-243.2"></polyline>
+<text text-anchor="middle" x="547.13" y="-264.2" font-family="Helvetica,sans-Serif" font-size="14.00">Encrypted File</text>
+<text text-anchor="middle" x="547.13" y="-247.4" font-family="Helvetica,sans-Serif" font-size="14.00">(Base64 encoded)</text>
+</g>
+<!-- FileSystem&#45;&gt;EncryptedFile -->
+<g id="edge10" class="edge">
+<title>FileSystem-&gt;EncryptedFile</title>
+<path fill="none" stroke="black" d="M384.12,-262C384.12,-262 469.94,-262 469.94,-262"></path>
+<polygon fill="black" stroke="black" points="469.94,-265.5 479.94,-262 469.94,-258.5 469.94,-265.5"></polygon>
+</g>
+<!-- EncryptedFile&#45;&gt;CLI -->
+<g id="edge11" class="edge">
+<title>EncryptedFile-&gt;CLI</title>
+<path fill="none" stroke="black" d="M547.13,-238.8C547.13,-238.8 547.13,-183.84 547.13,-183.84"></path>
+<polygon fill="black" stroke="black" points="550.63,-183.84 547.13,-173.84 543.63,-183.84 550.63,-183.84"></polygon>
+</g>
+<!-- Legend -->
+<g id="node12" class="node">
+<title>Legend</title>
+<polygon fill="#f0f0f0" stroke="none" points="394.47,-131.6 284.09,-131.6 284.09,-24.4 394.47,-24.4 394.47,-131.6"></polygon>
+<polygon fill="#a4c8e1" stroke="none" points="284.09,-104.8 284.09,-131.6 394.47,-131.6 394.47,-104.8 284.09,-104.8"></polygon>
+<polygon fill="none" stroke="black" points="284.09,-104.8 284.09,-131.6 394.47,-131.6 394.47,-104.8 284.09,-104.8"></polygon>
+<text text-anchor="start" x="295.32" y="-114" font-family="Helvetica,sans-Serif" font-size="14.00">User Interface</text>
+<polygon fill="#f9d68a" stroke="none" points="284.09,-78 284.09,-104.8 394.47,-104.8 394.47,-78 284.09,-78"></polygon>
+<polygon fill="none" stroke="black" points="284.09,-78 284.09,-104.8 394.47,-104.8 394.47,-78 284.09,-78"></polygon>
+<text text-anchor="start" x="289.09" y="-87.2" font-family="Helvetica,sans-Serif" font-size="14.00">Encryption Core</text>
+<polygon fill="#f99d8d" stroke="none" points="284.09,-51.2 284.09,-78 394.47,-78 394.47,-51.2 284.09,-51.2"></polygon>
+<polygon fill="none" stroke="black" points="284.09,-51.2 284.09,-78 394.47,-78 394.47,-51.2 284.09,-51.2"></polygon>
+<text text-anchor="start" x="297.64" y="-60.4" font-family="Helvetica,sans-Serif" font-size="14.00">Configuration</text>
+<polygon fill="#a4d8a1" stroke="none" points="284.09,-24.4 284.09,-51.2 394.47,-51.2 394.47,-24.4 284.09,-24.4"></polygon>
+<polygon fill="none" stroke="black" points="284.09,-24.4 284.09,-51.2 394.47,-51.2 394.47,-24.4 284.09,-24.4"></polygon>
+<text text-anchor="start" x="302.72" y="-33.6" font-family="Helvetica,sans-Serif" font-size="14.00">File System</text>
+</g>
+<!-- Legend&#45;&gt;CLI -->
+</g>
+</svg>

@@ -1,18 +1,23 @@
 # Lockix - Secure File Encryption Tool
 
 [![PyPI version](https://badge.fury.io/py/lockix.svg)](https://badge.fury.io/py/lockix)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A secure file encryption and decryption tool for protecting your sensitive files using AES-256-CBC encryption.
 
+
+![diagram](/diagram.svg)
+
 ## Features
 
-- AES-256-CBC encryption with PBKDF2 key derivation
-- Supports multiple file formats (JPG, MP4, PNG, PDF, DOC, TXT, etc.)
-- Interactive and command-line interface modes
-- Secure password management system
-- File watermarking for authenticity
-- Easy-to-use interface with colorful output
+- Industrial-strength encryption using AES-256-CBC
+- Advanced key derivation using PBKDF2 with 1M iterations
+- Support for 39+ common file formats
+- Interactive CLI with colored output
+- Direct command-line interface 
+- Secure password storage and management
+- File integrity verification with HMAC
+- Digital watermarking for authenticity
+- Cross-platform support (Windows/Linux/Mac)
 
 ## Installation
 
@@ -42,29 +47,65 @@ lockix decrypt -f file.en -p your_password
 
 Change password:
 ```bash
-lockix passwd -n new_password
+lockix passwd -n new_password -p current_password
 ```
 
 Reset password:
 ```bash
 lockix --reset
 ```
-
 ## Supported File Types
 
-1. JPG Files
-2. MP4 Files 
-3. PNG Files
-4. PDF Files
-5. DOC/DOCX Files
-6. TXT Files
-7. ZIP Files
-8. MP3 Files
-9. XLS/XLSX Files
-10. PPT/PPTX Files
-11. GIF Files 
-12. RAR Files
-13. CSV Files
+### Common File Types
+1. JPG/JPEG - Image files
+2. MP4 - Video files
+3. PNG - Image files
+4. PDF - Document files
+5. DOC/DOCX - Word documents
+6. TXT - Text files
+7. ZIP - Archive files
+8. MP3 - Audio files
+9. XLS/XLSX - Excel spreadsheets
+10. PPT/PPTX - PowerPoint presentations
+
+### Media & Images
+11. GIF - Animated images
+12. BMP - Bitmap images
+13. PSD - Photoshop files
+14. SVG - Vector graphics
+15. WAV - Audio files
+16. AVI - Video files
+17. MKV - Video files
+
+### Documents & Data
+18. CSV - Comma-separated values
+19. JSON - Data interchange
+20. XML - Markup language
+21. HTML - Web pages
+22. MD - Markdown files
+
+### Archives & Executables
+23. RAR - Archive files
+24. 7Z - Archive files
+25. ISO - Disk images
+26. EXE - Executable files
+27. JAR - Java archives
+28. APK - Android packages
+
+### Programming & Config
+29. PY - Python scripts
+30. JS - JavaScript files
+31. CPP - C++ source files
+32. CS - C# source files
+33. JAVA - Java source files
+34. PHP - PHP scripts
+35. SQL - Database queries
+36. ENV - Environment files
+37. INI/CFG - Configuration files
+38. LOG - Log files
+39. DAT - Data files
+
+Note: Files are encrypted with a .e* extension (e.g., .ejpg, .epdf)
 
 ## Security Features
 
